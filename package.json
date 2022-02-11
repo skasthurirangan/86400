@@ -1,0 +1,39 @@
+{
+  "name": "codechallenge",
+  "version": "1.0.0",
+  "description": "Repository to hold WooliesX Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "ui:test": "cypress run --spec **/*.UI.feature",
+    "api:test": "cypress run --spec **/*.API.feature",
+    "all:test": "cypress run --spec **/*.*.feature",
+    "bdd:report": "node ./cypress/support/reportGenerator/cucumber-report-generator.js",
+    "test:report":"npm run all:test && npm run bdd:report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skasthurirangan/codeChallenge.git"
+  },
+  "author": "@Sowmiya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skasthurirangan/codeChallenge/issues"
+  },
+  "homepage": "https://github.com/skasthurirangan/codeChallenge#readme",
+  "devDependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "cypress": "^7.2.0",
+    "cypress-cucumber-preprocessor": "^4.1.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "features": "cypress/integration/features/**/",
+    "stepDefinitions": "cypress/integration/stepDefinitions/**/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/results/cucumber",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

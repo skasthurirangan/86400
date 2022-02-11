@@ -1,0 +1,17 @@
+{
+    "testFiles":["**/*.feature"],
+    "viewportWidth": 1280,
+    "ViewportHeight": 650,
+    "waitForAnimation": true,
+    "animationDistanceTreshold": 20,
+    "video": true,
+    "defultCommandTimeout": 5000,
+    "pageLoadTimeout": 30000,
+    "defaultCommandTimeout": 6000,
+    "execTimeout": 15000,
+    "requestTimeOut": 150000,
+    "responseTimeout": 150000,
+    "failOnStatusCode": false,
+    "chromiumSecurity": false,
+    "chromeWebSecurity": false
+}

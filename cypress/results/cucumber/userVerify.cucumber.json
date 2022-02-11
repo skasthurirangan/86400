@@ -1,0 +1,53 @@
+[
+  {
+    "description": "    Verifying a perticular user is present",
+    "keyword": "Feature",
+    "name": "Verify user",
+    "line": 1,
+    "id": "verify-user",
+    "tags": [],
+    "uri": "userVerify.API.feature",
+    "elements": [
+      {
+        "id": "verify-user;verify-user",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I perform a get request and check status",
+            "result": {
+              "status": "passed",
+              "duration": 293000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "verify if the fist name is \"Michael\"",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "verify if the email is \"lindsay.ferguson@reqres.in\"",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

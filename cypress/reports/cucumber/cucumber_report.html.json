@@ -1,0 +1,129 @@
+[
+  {
+    "description": "    I want to be able to add 2 items to the cart and place an order",
+    "keyword": "Feature",
+    "name": "Place an Order @myStore online shopping website",
+    "line": 1,
+    "id": "place-an-order-@mystore-online-shopping-website",
+    "tags": [],
+    "uri": "placeOrderE2E.UI.feature",
+    "elements": [
+      {
+        "id": "place-an-order-@mystore-online-shopping-website;purchase-2-items-and-place-the-order",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Purchase 2 items and place the order",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I open mystore page",
+            "result": {
+              "status": "passed",
+              "duration": 13791000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "productName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Faded Short Sleeve T-shirts"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Blouse"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 8,
+            "name": "select product",
+            "result": {
+              "status": "passed",
+              "duration": 27379000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "navigate to checkout",
+            "result": {
+              "status": "passed",
+              "duration": 8431000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Verifying a perticular user is present",
+    "keyword": "Feature",
+    "name": "Verify user",
+    "line": 1,
+    "id": "verify-user",
+    "tags": [],
+    "uri": "userVerify.API.feature",
+    "elements": [
+      {
+        "id": "verify-user;verify-user",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify User",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I perform a get request and check status",
+            "result": {
+              "status": "passed",
+              "duration": 474000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "verify if the fist name is \"Michael\"",
+            "result": {
+              "status": "passed",
+              "duration": 52000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "verify if the email is \"lindsay.ferguson@reqres.in\"",
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
